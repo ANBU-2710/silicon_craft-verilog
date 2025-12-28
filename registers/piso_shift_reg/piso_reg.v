@@ -1,5 +1,5 @@
-module piso #(parameter widht = 4)(input clk,rst,shift,load,
-	input [width-1:0]parallel_in,output serial_out);
+module piso #(parameter width = 4)(input clk,rst,shift,load,
+	input [width-1:0]parallel_in,output reg serial_out);
 reg [width-1:0]shift_reg;
 always@(posedge clk)begin
 	if(rst)begin
